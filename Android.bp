@@ -1,0 +1,35 @@
+soong_namespace {
+}
+
+android_app_import {
+	name: "MiuiCamera",
+    overrides: ["Snap", "Camera2"],
+	owner: "MiuiCamera",
+	apk: "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk",
+        presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+        name: "MiuiExtraPhoto",
+        owner: "MiuiExtraPhoto",
+        apk: "proprietary/system/priv-app/MiuiExtraPhoto/MiuiExtraPhoto.apk",
+        presigned: true,
+        dex_preopt: {
+                enabled: false,
+        },
+        privileged: true,
+}
+
+android_app_import {
+        name: "miuires",
+        owner: "miuires",
+        apk: "proprietary/system/app/miuires/miuires.apk",
+        presigned: true,
+        dex_preopt: {
+                enabled: false,
+        },
+}
